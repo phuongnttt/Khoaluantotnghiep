@@ -1,0 +1,310 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="99770dfd-b744-471e-bdd5-7179d84f05a1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>HDNKUEH</ID>
+  <Name>HDNKUEH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>HDNKUEH</DataSourceID>
+  <Schema>
+    <xs:schema id="HDNKUEH" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="HDNKUEH" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="69d159b6-d3a3-4936-b0c6-8f553984a253">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimChuyenNganh" msprop:DbTableName="DimChuyenNganh" msprop:FriendlyName="DimChuyenNganh" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="ca2b92c5-ed11-4858-abfe-4d399240ab44">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MSCN" msprop:FriendlyName="MSCN" msprop:DbColumnName="MSCN" msprop:design-time-name="1f0ea994-f2ff-4874-98d6-5ea14bb4870b" type="xs:int" />
+                  <xs:element name="NameMajor" msprop:FriendlyName="NameMajor" msprop:DbColumnName="NameMajor" msprop:design-time-name="bad3fe7f-a2eb-4c87-8aa7-87cd7944fc21">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MSKhoa" msprop:FriendlyName="MSKhoa" msprop:DbColumnName="MSKhoa" msprop:design-time-name="45cbdc52-2f20-4edc-845a-2cd980c7c973" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimDonViToChuc" msprop:DbTableName="DimDonViToChuc" msprop:FriendlyName="DimDonViToChuc" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="059152b2-57ae-4fe8-af21-94bfbd824f3f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MSDVTC" msprop:FriendlyName="MSDVTC" msprop:DbColumnName="MSDVTC" msprop:design-time-name="86c51547-74d1-4e3c-b11d-15d5cb48b801" type="xs:int" />
+                  <xs:element name="Organization" msprop:FriendlyName="Organization" msprop:DbColumnName="Organization" msprop:design-time-name="58c5d28c-105e-4e07-951b-fefb34b3e352">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TypeOrganization" msprop:FriendlyName="TypeOrganization" msprop:DbColumnName="TypeOrganization" msprop:design-time-name="5a2ad3bd-a7eb-4fc4-a6df-3745f1faed6b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimHoatDong" msprop:DbTableName="DimHoatDong" msprop:FriendlyName="DimHoatDong" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9ebad2aa-6d8e-4d33-8edc-07c0193f090e">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MSHD" msprop:FriendlyName="MSHD" msprop:DbColumnName="MSHD" msprop:design-time-name="ed1aac63-b175-46fe-8220-847f95c50f12" type="xs:int" />
+                  <xs:element name="NameActivity" msprop:FriendlyName="NameActivity" msprop:DbColumnName="NameActivity" msprop:design-time-name="78e05ac6-b06c-4bc1-96fd-521a7f37ec7b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimKhoa" msprop:DbTableName="DimKhoa" msprop:FriendlyName="DimKhoa" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="5ffd73dc-b664-4bbc-af92-4922419eb36e">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MSKhoa" msprop:FriendlyName="MSKhoa" msprop:DbColumnName="MSKhoa" msprop:design-time-name="a7baac35-ba2b-4c8b-99fb-a53c220c422c" type="xs:int" />
+                  <xs:element name="NameFaculity" msprop:FriendlyName="NameFaculity" msprop:DbColumnName="NameFaculity" msprop:design-time-name="12137c41-5ed0-4749-bd7b-51ad12fc261b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimKhoaHoc" msprop:DbTableName="DimKhoaHoc" msprop:FriendlyName="DimKhoaHoc" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9a473fb0-1fbf-4a65-8d90-33156941795c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MSKhoaHoc" msprop:FriendlyName="MSKhoaHoc" msprop:DbColumnName="MSKhoaHoc" msprop:design-time-name="60e6e464-1a36-4910-b753-80dca04e2345" type="xs:int" />
+                  <xs:element name="NameCourse" msprop:FriendlyName="NameCourse" msprop:DbColumnName="NameCourse" msprop:design-time-name="a2dfaae3-2811-4b97-acf9-f1ecf5ec809f">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StartYearCourse" msprop:FriendlyName="StartYearCourse" msprop:DbColumnName="StartYearCourse" msprop:design-time-name="e3fb986c-3fe5-480b-b3c0-aa49b214414a" type="xs:int" />
+                  <xs:element name="EndYearCourse" msprop:FriendlyName="EndYearCourse" msprop:DbColumnName="EndYearCourse" msprop:design-time-name="0615d1be-9057-4603-b8a8-24a464873581" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimSinhVien" msprop:DbTableName="DimSinhVien" msprop:FriendlyName="DimSinhVien" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="054d2b4b-45b1-4591-8bda-bbec2631c99e">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MSSV" msprop:FriendlyName="MSSV" msprop:DbColumnName="MSSV" msprop:design-time-name="63866538-9a99-4333-af25-35289934d672" type="xs:long" />
+                  <xs:element name="Sur_x0026_middlename" msprop:FriendlyName="Sur&amp;middlename" msprop:DbColumnName="Sur&amp;middlename" msprop:design-time-name="31721b4c-dd9b-485d-a1e1-fdb3979d0396">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Name" msprop:FriendlyName="Name" msprop:DbColumnName="Name" msprop:design-time-name="6bb13cfc-d9f9-4a66-9750-9fb200df2119">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Gender" msprop:FriendlyName="Gender" msprop:DbColumnName="Gender" msprop:design-time-name="8d44074c-36b6-4306-b750-aa30ddd85f48">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Birthday" msprop:FriendlyName="Birthday" msprop:DbColumnName="Birthday" msprop:design-time-name="fc44da5a-4745-480c-887f-e5aadd934b23" type="xs:dateTime" />
+                  <xs:element name="CCCD" msprop:FriendlyName="CCCD" msprop:DbColumnName="CCCD" msprop:design-time-name="867b673a-0ce0-4df1-a63c-43f890cd64e9" type="xs:long" />
+                  <xs:element name="PhoneNumber" msprop:FriendlyName="PhoneNumber" msprop:DbColumnName="PhoneNumber" msprop:design-time-name="b218e35b-fef4-464f-85bf-ac2360e4422d" type="xs:long" />
+                  <xs:element name="EmailStudent" msprop:FriendlyName="EmailStudent" msprop:DbColumnName="EmailStudent" msprop:design-time-name="e84f0480-073a-41be-abda-dfb8f9137d37">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Province" msprop:FriendlyName="Province" msprop:DbColumnName="Province" msprop:design-time-name="6ec24941-c5bc-4ef6-8162-c45ea9a7981a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MSKhoaHoc" msprop:FriendlyName="MSKhoaHoc" msprop:DbColumnName="MSKhoaHoc" msprop:design-time-name="d16de31b-8e87-4f89-b5e7-076f9b35c3d0" type="xs:int" minOccurs="0" />
+                  <xs:element name="MSKhoa" msprop:FriendlyName="MSKhoa" msprop:DbColumnName="MSKhoa" msprop:design-time-name="af05dc10-964c-4569-901d-d779894a90eb" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimThoiGian" msprop:DbTableName="DimThoiGian" msprop:FriendlyName="DimThoiGian" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="c5d9dff7-d519-4362-adcc-08d467c4ba88">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MSThoiGian" msprop:FriendlyName="MSThoiGian" msprop:DbColumnName="MSThoiGian" msprop:design-time-name="babb1656-b051-473e-993a-58f03ad7dc11" type="xs:int" />
+                  <xs:element name="StartDate" msprop:FriendlyName="StartDate" msprop:DbColumnName="StartDate" msprop:design-time-name="7cdb5894-b88f-4b7f-93cb-90fefe6c79c7" type="xs:dateTime" />
+                  <xs:element name="EndDate" msprop:FriendlyName="EndDate" msprop:DbColumnName="EndDate" msprop:design-time-name="1dbd2f3d-1942-41ce-af02-03315c141943" type="xs:dateTime" />
+                  <xs:element name="YearStart" msprop:FriendlyName="YearStart" msprop:DbColumnName="YearStart" msprop:design-time-name="ee4f825d-9f8c-4b53-8a95-1a697c842811" type="xs:int" />
+                  <xs:element name="MonthStart" msprop:FriendlyName="MonthStart" msprop:DbColumnName="MonthStart" msprop:design-time-name="440fd22f-ec6d-4034-9ea4-9a0d047f8877" type="xs:int" />
+                  <xs:element name="DayStart" msprop:FriendlyName="DayStart" msprop:DbColumnName="DayStart" msprop:design-time-name="11e51e20-b06d-4395-8d4e-8f8b3fa04885" type="xs:int" />
+                  <xs:element name="QuaterStart" msprop:FriendlyName="QuaterStart" msprop:DbColumnName="QuaterStart" msprop:design-time-name="b5f908ae-2719-429e-b4cc-3d1d72655ce4" type="xs:int" />
+                  <xs:element name="YearEnd" msprop:FriendlyName="YearEnd" msprop:DbColumnName="YearEnd" msprop:design-time-name="6bc0fbf7-e7bf-4ce8-8741-30fcd182b185" type="xs:int" />
+                  <xs:element name="MonthEnd" msprop:FriendlyName="MonthEnd" msprop:DbColumnName="MonthEnd" msprop:design-time-name="4d33ad1b-1e2e-4451-bfc1-fe84fa380243" type="xs:int" />
+                  <xs:element name="DayEnd" msprop:FriendlyName="DayEnd" msprop:DbColumnName="DayEnd" msprop:design-time-name="dd551842-e401-4332-8b40-e130d82f97d3" type="xs:int" />
+                  <xs:element name="QuaterEnd" msprop:FriendlyName="QuaterEnd" msprop:DbColumnName="QuaterEnd" msprop:design-time-name="ece1d730-3071-47de-9f63-acea40a15dc6" type="xs:int" />
+                  <xs:element name="Duration" msprop:FriendlyName="Duration" msprop:DbColumnName="Duration" msprop:design-time-name="f4440a6d-7c28-45a7-a1f6-53f6ec8c4638" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimTieuChiDanhGia" msprop:DbTableName="DimTieuChiDanhGia" msprop:FriendlyName="DimTieuChiDanhGia" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="3eab3e3f-0723-47e3-9300-5c27d88aa7be">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MSTCDG" msprop:FriendlyName="MSTCDG" msprop:DbColumnName="MSTCDG" msprop:design-time-name="35522190-c242-485c-a707-e5a75122dbc1" type="xs:int" />
+                  <xs:element name="EvaluationCriteria" msprop:FriendlyName="EvaluationCriteria" msprop:DbColumnName="EvaluationCriteria" msprop:design-time-name="4fdb9784-6aca-49d3-87b8-b7e2d0b9df17">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CriteriaContent" msprop:FriendlyName="CriteriaContent" msprop:DbColumnName="CriteriaContent" msprop:design-time-name="9f6c47d1-66f8-45b7-b5dd-d8810ed21694">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Describe" msprop:FriendlyName="Describe" msprop:DbColumnName="Describe" msprop:design-time-name="7c7dd42f-395f-460d-889c-90b703af11f1">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PointEvaluation" msprop:FriendlyName="PointEvaluation" msprop:DbColumnName="PointEvaluation" msprop:design-time-name="926c89a3-ecb6-4531-8924-497e4ffc56dc" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactThamGia" msprop:DbTableName="FactThamGia" msprop:FriendlyName="FactThamGia" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="bccb2781-c4e2-4031-aef9-63fea7d82143">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MSThamGia" msprop:FriendlyName="MSThamGia" msprop:DbColumnName="MSThamGia" msprop:design-time-name="bb6ea51d-2234-4551-9e2d-a6a1881e723b" type="xs:int" />
+                  <xs:element name="MSTCDG" msprop:FriendlyName="MSTCDG" msprop:DbColumnName="MSTCDG" msprop:design-time-name="4f74d3c8-1f09-4e90-8dd2-beab7f5cdc1d" type="xs:int" />
+                  <xs:element name="MSThoiGian" msprop:FriendlyName="MSThoiGian" msprop:DbColumnName="MSThoiGian" msprop:design-time-name="79480323-6f84-48db-9823-3ef66fc85ea3" type="xs:int" />
+                  <xs:element name="MSHD" msprop:FriendlyName="MSHD" msprop:DbColumnName="MSHD" msprop:design-time-name="dd573769-0c7a-4d8b-9658-963ba817c247" type="xs:int" />
+                  <xs:element name="MSDVTC" msprop:FriendlyName="MSDVTC" msprop:DbColumnName="MSDVTC" msprop:design-time-name="7b703735-a194-4943-ada0-ba66d8b8bf6f" type="xs:int" />
+                  <xs:element name="MSSV" msprop:FriendlyName="MSSV" msprop:DbColumnName="MSSV" msprop:design-time-name="fbe56703-04a0-4375-a27e-f5172d860871" type="xs:long" />
+                  <xs:element name="Duration" msprop:FriendlyName="Duration" msprop:DbColumnName="Duration" msprop:design-time-name="a4f08e2e-59d5-4dfe-a8de-70e5de56e62d" type="xs:int" />
+                  <xs:element name="DiemDanhGia" msprop:FriendlyName="DiemDanhGia" msprop:DbColumnName="DiemDanhGia" msprop:design-time-name="9b6945ac-a90b-4668-9ba7-705c94bbc84b" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimChuyenNganh" />
+          <xs:field xpath="MSCN" />
+        </xs:unique>
+        <xs:unique name="dbo_DimDonViToChuc_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimDonViToChuc" />
+          <xs:field xpath="MSDVTC" />
+        </xs:unique>
+        <xs:unique name="dbo_DimHoatDong_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimHoatDong" />
+          <xs:field xpath="MSHD" />
+        </xs:unique>
+        <xs:unique name="dbo_DimKhoa_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimKhoa" />
+          <xs:field xpath="MSKhoa" />
+        </xs:unique>
+        <xs:unique name="dbo_DimKhoaHoc_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimKhoaHoc" />
+          <xs:field xpath="MSKhoaHoc" />
+        </xs:unique>
+        <xs:unique name="dbo_DimSinhVien_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimSinhVien" />
+          <xs:field xpath="MSSV" />
+        </xs:unique>
+        <xs:unique name="dbo_DimThoiGian_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimThoiGian" />
+          <xs:field xpath="MSThoiGian" />
+        </xs:unique>
+        <xs:unique name="dbo_DimTieuChiDanhGia_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimTieuChiDanhGia" />
+          <xs:field xpath="MSTCDG" />
+        </xs:unique>
+        <xs:unique name="dbo_FactThamGia_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactThamGia" />
+          <xs:field xpath="MSThamGia" />
+        </xs:unique>
+        <xs:keyref name="FK_Fact_DimDonViToChuc" refer="dbo_DimDonViToChuc_Constraint1">
+          <xs:selector xpath=".//dbo_FactThamGia" />
+          <xs:field xpath="MSDVTC" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_DimSinhVien" refer="dbo_DimSinhVien_Constraint1">
+          <xs:selector xpath=".//dbo_FactThamGia" />
+          <xs:field xpath="MSSV" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_DimTieuChiDanhGia" refer="dbo_DimTieuChiDanhGia_Constraint1">
+          <xs:selector xpath=".//dbo_FactThamGia" />
+          <xs:field xpath="MSTCDG" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_DimThoiGian" refer="dbo_DimThoiGian_Constraint1">
+          <xs:selector xpath=".//dbo_FactThamGia" />
+          <xs:field xpath="MSThoiGian" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_DimHoatDong" refer="dbo_DimHoatDong_Constraint1">
+          <xs:selector xpath=".//dbo_FactThamGia" />
+          <xs:field xpath="MSHD" />
+        </xs:keyref>
+        <xs:keyref name="FK_DimSinhVien_DimKhoa" refer="dbo_DimKhoa_Constraint1">
+          <xs:selector xpath=".//dbo_DimSinhVien" />
+          <xs:field xpath="MSKhoa" />
+        </xs:keyref>
+        <xs:keyref name="FK_DimSinhVien_DimKhoaHoc" refer="dbo_DimKhoaHoc_Constraint1">
+          <xs:selector xpath=".//dbo_DimSinhVien" />
+          <xs:field xpath="MSKhoaHoc" />
+        </xs:keyref>
+        <xs:keyref name="FK_DimCN_DimKhoa" refer="dbo_DimKhoa_Constraint1">
+          <xs:selector xpath=".//dbo_DimChuyenNganh" />
+          <xs:field xpath="MSKhoa" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <HDNKUEH xmlns="" />
+  </Schema>
+</DataSourceView>
