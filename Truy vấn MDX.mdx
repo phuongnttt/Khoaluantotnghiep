@@ -1,0 +1,35 @@
+﻿/*Tính số lượng sinh viên tham gia ở mỗi hoạt động*/
+SELECT {[Dim Hoat Dong].[Name Activity].Members} ON ROWS,
+       {[Measures].[Fact Tham Gia Count]} ON COLUMNS
+FROM [HDNKUEH];
+
+/*Tính số lượng hoạt động mà mỗi sinh viên đã tham gia*/
+SELECT {[Dim Sinh Vien].[MSSV].Members} ON ROWS,
+       {[Measures].[Fact Tham Gia Count]} ON COLUMNS
+FROM [HDNKUEH];
+
+/*Tính toán Top 05 khoa có số lượng tham gia hoạt động nhiều nhất tháng 3/2023*/
+SELECT {[Measures].[Fact Tham Gia Count]} ON COLUMNS,
+       TopCount(
+           {[Dim Sinh Vien].[Name Faculity].Children},
+           5,
+           [Measures].[Fact Tham Gia Count]
+       ) ON ROWS
+FROM [HDNKUEH]
+WHERE ([Dim Thoi Gian].[Month Start].&[3], [Dim Thoi Gian].[Year Start].&[2023]);
+
+/*Tính toán sắp xếp giảm dần các khóa có sinh viên tham gia hoạt động vào năm 2023*/
+SELECT Order(
+           {[Dim Sinh Vien].[Name Course].Children},
+           [Measures].[Fact Tham Gia Count], 
+           BDESC
+       ) ON ROWS,
+       {[Measures].[Fact Tham Gia Count]} ON COLUMNS
+FROM [HDNKUEH]
+WHERE ([Dim Thoi Gian].[Year Start].&[2023]);
+
+
+SELECT [Dim Hoat Dong].[Name Activity].Children ON ROWS,
+		[Measures].[Duration] ON COLUMNS
+FROM [HDNKUEH]
+WHERE [Dim Thoi Gian].[Month Start].[3]

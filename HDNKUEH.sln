@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "HDNKUEH", "HDNKUEH\HDNKUEH.dwproj", "{A51EDCC9-291C-42BA-B314-0B8C9D792719}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A51EDCC9-291C-42BA-B314-0B8C9D792719}.Development|Default.ActiveCfg = Development
+		{A51EDCC9-291C-42BA-B314-0B8C9D792719}.Development|Default.Build.0 = Development
+		{A51EDCC9-291C-42BA-B314-0B8C9D792719}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EC25AE2-09E8-4122-A907-7BEE6DE235D1}
+	EndGlobalSection
+EndGlobal
